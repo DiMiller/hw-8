@@ -1,0 +1,135 @@
+.header {
+    outline: 1px solid #ececec;
+  }
+  
+  
+  .header-logo-accent {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  .header-logo {
+    margin-right: 93px;
+  
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .header-list {
+    display: flex;
+    
+  }
+  
+  .header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    position: relative;
+
+    @include transition();
+
+    &:hover,
+    &:focus {
+    color:var(--accent-color);
+  }
+    &.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: 0;
+    bottom: 0;
+    }
+  }
+  
+  
+  .header-communication-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .header-item:not(:last-child) {
+    display: block;
+    margin-right: 50px;
+  }
+  
+  .header-communication-item {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .header-mail-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-right: 30px;
+  
+    @include transition();
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+    
+  }
+  .header-tel-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-left: 10px;
+    
+    @include transition();
+    
+  }
+  
+  .mail-icon, .tel-icon{
+    margin-right: 10px;
+    fill: currentColor;
+    
+  }
+ 
+ 
+  
+  
