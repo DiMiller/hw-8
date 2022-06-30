@@ -90,12 +90,12 @@
   .input-shell:hover &{
     border-color: var(--accent-color);
     transition-property: border-color;
-    @include transition();
+    transition-duration: 250ms;;
   }
    &:focus{
     border-color: var(--accent-color);
     outline: none;
-    @include transition();
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   }
 
@@ -132,7 +132,9 @@
     .modal-input:focus ~ &{
      fill: var(--accent-color);
     
-     @include transition();
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
     }
   }
   
@@ -205,11 +207,15 @@
     color: #ffffff;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    @include transition();
+    transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: var(--accent-color);
-      @include transition();
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   }
   

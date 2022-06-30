@@ -44,7 +44,9 @@
     color: #212121;
     position: relative;
 
-    @include transition();
+    transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -100,7 +102,9 @@
     color: #757575;
     margin-right: 30px;
   
-    @include transition();
+    transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -120,7 +124,9 @@
     color: #757575;
     margin-left: 10px;
     
-    @include transition();
+    transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
   

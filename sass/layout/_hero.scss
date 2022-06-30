@@ -23,10 +23,18 @@
     margin-bottom: 30px;
   
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.38;
     letter-spacing: 0.06em;
     color: var(--second-title-color);
+    
+    @media screen and (min-width: 1200px){
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+    }
+    
   }
   
   .hero-btn {
@@ -42,7 +50,9 @@
     letter-spacing: 0.06em;
     color: #ffffff;
     background-color: var(--accent-color);
-    @include transition();
+    transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
     background-color: var(--accent-color);
