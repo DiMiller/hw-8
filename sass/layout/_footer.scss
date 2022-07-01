@@ -9,13 +9,15 @@
         justify-content: space-around;
         
       }
+      @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: center;
+      }
+
     }
-    @media screen and (min-width: 1200px){
-      margin-bottom: 0;
-      flex-wrap: nowrap;
-      align-items: baseline;
-      justify-content: center;
-    }
+    
     padding-top: 60px;
     padding-bottom: 60px;
   
@@ -233,6 +235,11 @@
     border-radius: 4px;
     padding-left: 16px;
     
+    @media screen and (max-width: 1999px){
+      margin-right: 12px;
+      margin-bottom: 20px;
+      
+     }
 
     @media screen and (min-width: 1200px){
       margin-right: 12px;

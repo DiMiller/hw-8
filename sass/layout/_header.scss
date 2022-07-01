@@ -23,13 +23,16 @@
   }
   
   .header-nav {
+    
     display: flex;
     align-items: center;
     margin-right: auto;
   }
   
   .header-list {
-    display: flex;
+    display: none;
+
+    /*display: flex;*/
     
   }
   
@@ -66,11 +69,13 @@
   
   
   .header-communication-list {
-    display: flex;
+    display: none;
+
+    /*display: flex;
     align-items: center;
     margin-left: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     
   }
   
@@ -137,5 +142,21 @@
   }
  
  
+  .mob-open-btn{
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    
+  }
   
-  
+  /*.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+}
+*/
