@@ -4,18 +4,21 @@
     .container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       @media screen and (min-width: 768px){
         justify-content: space-around;
+        
       }
     }
     @media screen and (min-width: 1200px){
-      text-align: left;
       margin-bottom: 0;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      justify-content: center;
     }
     padding-top: 60px;
     padding-bottom: 60px;
-    
-    
+  
   }
   
   .footer-contacts {
@@ -31,13 +34,12 @@
       
     }
     @media screen and (min-width: 1200px){
-      text-align: left;
       margin-bottom: 0;
-      
-      
+      justify-content: flex-start;
+      margin-right: 70px;
      }
    
-   /* padding-right: 70px;*/
+   
   }
   
 
@@ -52,6 +54,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    @media screen and (min-width: 1200px){
+    text-align: left;
+    width: 145px;
+  }
   }
   .footer-logo-accent {
     font-family: "Raleway";
@@ -76,7 +82,9 @@
   
   .footer-contacts-item{
     text-align: center;
-    
+    @media screen and (min-width: 1200px){
+      text-align: left;
+  }
   }
   .footer-address-link {
     
@@ -115,8 +123,8 @@
      width: 206px;
     }
     @media screen and (min-width: 1200px){
-      text-align: left;
       margin-bottom: 0;
+      width: 206px;
       
      }
   }
@@ -130,14 +138,16 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    
+    @media screen and (min-width: 1200px){
+      text-align: left;
+  }
     
   }
   
   .footer-social-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
@@ -184,7 +194,6 @@
   .footer-subscribe{
     display: block;
     @media screen and (min-width: 1200px){
-      text-align: left;
       margin-bottom: 0;
       margin-left: 93px;
      }
@@ -209,6 +218,9 @@
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width: 1200px){
+      text-align: left;
+  }
   }
   
   .sub-input{
@@ -220,7 +232,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left: 16px;
-    margin-bottom: 20px;
+    
 
     @media screen and (min-width: 1200px){
       margin-right: 12px;
@@ -253,7 +265,7 @@
     
     transition-property: color, border-color;
      transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
   }
   
