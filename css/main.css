@@ -357,16 +357,11 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
-@media screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 88px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header-logo {
-    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
 
@@ -374,6 +369,13 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .header-list {
@@ -382,7 +384,6 @@ body {
 @media screen and (min-width: 768px) {
   .header-list {
     display: flex;
-    margin-right: 88px;
   }
 }
 
@@ -419,8 +420,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-communication-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -473,7 +473,7 @@ body {
 .header-tel-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   background-color: #ffffff;
   font-weight: 500;
   font-size: 14px;
@@ -483,6 +483,9 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-tel-link:hover, .header-tel-link:focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
   .header-tel-link {
@@ -513,6 +516,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #ffffff;
@@ -600,6 +604,7 @@ body {
 .mob-social-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .mob-social-item + .mob-social-item {

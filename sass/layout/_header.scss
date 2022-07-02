@@ -13,22 +13,20 @@
     color: var(--accent-color);
   }
   .header-logo {
-    @media screen and (min-width: 768px){
-      margin-right: 88px;
-    }
-    @media screen and (min-width: 1200px){
-      margin-right: 93px;
-      padding-top: 24px;
-      padding-bottom: 25px;
-  }
-   
-  
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
+    @media screen and (min-width: 768px){
+      
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
+  }
   }
   
   .header-nav {
@@ -36,14 +34,20 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+    justify-content:space-between
     
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   
   .header-list {
     display: none;
     @media screen and (min-width: 768px){
       display: flex;
-      margin-right: 88px;
+      
     }
     
   }
@@ -83,8 +87,7 @@
   .header-communication-list {
     display: none;
     @media screen and (min-width: 768px){
-      display: flex;
-      flex-wrap: wrap;
+      display: block;
       padding-top: 21px;
       padding-bottom: 21px;
     }
@@ -142,7 +145,7 @@
   .header-tel-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     background-color: #ffffff;
     font-weight: 500;
     font-size: 14px;
@@ -154,6 +157,11 @@
     transition-property: color;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
      @media screen and (min-width: 1200px){
       margin-left: 10px;
   }
@@ -185,6 +193,7 @@
   
   .mobile-menu{
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #ffffff;
@@ -276,6 +285,7 @@ margin-bottom: 32px;
   .mob-social-list{
     display: flex;
     justify-content:flex-start;
+    flex-wrap: wrap;
     
   }
   
