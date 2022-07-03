@@ -145,8 +145,6 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -159,6 +157,18 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .close-btn {
@@ -269,10 +279,22 @@ body {
 .agreement-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.agreement-text-terms {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .agreement-icon-check {
@@ -288,15 +310,6 @@ body {
 .check-agreement:checked + .agreement-text .agreement-icon-check {
   background-color: var(--accent-color);
   border: none;
-}
-
-.agreement-text-terms {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  color: var(--accent-color);
-  margin-left: 5px;
 }
 
 .icon-check {
@@ -372,12 +385,11 @@ body {
   justify-content: space-between;
 }
 
-.navigation {
+/*.navigation{
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
+}*/
 .header-list {
   display: none;
 }
