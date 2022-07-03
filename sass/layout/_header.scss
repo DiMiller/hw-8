@@ -20,7 +20,8 @@
     letter-spacing: 0.03em;
     color: #000000;
     @media screen and (min-width: 768px){
-      
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
     @media screen and (min-width: 1200px){
       padding-top: 24px;
@@ -35,13 +36,8 @@
     align-items: center;
     margin-right: auto;
     justify-content:space-between
-    
-  }
-  /*.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }*/
+  }  
+  
   
   .header-list {
     display: none;
@@ -88,8 +84,6 @@
     display: none;
     @media screen and (min-width: 768px){
       display: block;
-      padding-top: 21px;
-      padding-bottom: 21px;
     }
     @media screen and (min-width: 1200px){
       display: flex;

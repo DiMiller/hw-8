@@ -193,14 +193,14 @@
           <h2 class="work-title title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <div class="work-item-card"><img src="./image/img.jpg" alt="верстка сайта" width="370"/>
+              <div class="work-item-card"><img src="./image/work-1.jpg" alt="верстка сайта" width="370"/>
               <p class="text-card">Десктопные приложения</p>
             </div>
             </li>
             <li class="work-item">
               <div class="work-item-card">
               <img
-                src="./image/img-2.jpg"
+                src="./image/work-2.jpg"
                 alt="адаптирование сайта в приложение"
                 width="370"
               /><p class="text-card">Мобильные приложения</p></div>
@@ -208,7 +208,7 @@
             <li class="work-item">
               <div class="work-item-card">
               <img
-                src="./image/box-3.jpg"
+                src="./image/work-3.jpg"
                 alt="визуализация сайта для пользователя"
                 width="370"
               /><p class="text-card">Дизайнерские решения</p></div>
@@ -221,12 +221,26 @@
           <h2 class="command__title">Наша команда</h2>
           <ul class="card__list list">
             <li class="card__item">
-              <img
+              <picture>
+                <source  srcset="./image/team-1-desk.jpg 1x, 
+                ./image/team-1-desk-2x.jpg 2x"
+                @media="(min-width:1200px)"
+                />
+                <source  srcset="./image/team-1-tab.jpg 1x, 
+                ./image/team-1-tab-2x.jpg 2x"
+                @media="(min-width:768px)"
+                />
+                <source  srcset="./image/team-1-mob.jpg 1x, 
+                ./image/team-1-mob-2x.jpg 2x"
+                @media="(min-width:480px)"
+                />
+                <img
                 class="img"
-                src="./image/team-1.jpg"
+                src="./image/team-1-mob.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
+              </picture>
               <div class="person">
                 <h3 class="person__title">Игорь Демьяненко</h3>
                 <p class="person__text text">Product Designer</p>
@@ -265,12 +279,26 @@
               </div>
             </li>
             <li class="card__item">
-              <img
+              <picture>
+                <source  srcset="./image/team-2-desk.jpg 1x, 
+                ./image/team-2-desk-2x.jpg 2x"
+                @media="(min-width:1200px)"
+                />
+                <source  srcset="./image/team-2-tab.jpg 1x, 
+                ./image/team-2-tab-2x.jpg 2x"
+                @media="(min-width:768px)"
+                />
+                <source  srcset="./image/team-2-mob.jpg 1x, 
+                ./image/team-2-mob-2x.jpg 2x"
+                @media="(min-width:480px)"
+                />
+                <img
                 class="img"
-                src="./image/team-2.jpg"
+                src="./image/team-2-mob.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
+              </picture>
               <div class="person">
                 <h3 class="person__title">Ольга Репина</h3>
                 <p class="person__text text">Frontend Developer</p>
@@ -309,12 +337,27 @@
               </div>
             </li>
             <li class="card__item">
-              <img
+              <picture>
+                <source  srcset="./image/team-3-desk.jpg 1x, 
+                ./image/team-3-desk-2x.jpg 2x"
+                @media="(min-width:1200px)"
+                />
+                <source  srcset="./image/team-3-tab.jpg 1x, 
+                ./image/team-3-tab-2x.jpg 2x"
+                @media="(min-width:768px)"
+                />
+                <source  srcset="./image/team-3-mob.jpg 1x, 
+                ./image/team-3-mob-2x.jpg 2x"
+                @media="(min-width:480px)"
+                />
+                <img
                 class="img"
-                src="./image/team-3.jpg"
+                src="./image/team-3-mob.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
+              </picture>
+            
               <div class="person">
                 <h3 class="person__title">Николай Тарасов</h3>
                 <p class="person__text text">Marketing</p>
@@ -353,12 +396,27 @@
               </div>
             </li>
             <li class="card__item">
-              <img
+              <picture>
+                <source  srcset="./image/team-4-desk.jpg 1x, 
+                ./image/team-4-desk-2x.jpg 2x"
+                @media="(min-width:1200px)"
+                />
+                <source  srcset="./image/team-4-tab.jpg 1x, 
+                ./image/team-4-tab-2x.jpg 2x"
+                @media="(min-width:768px)"
+                />
+                <source  srcset="./image/team-4-mob.jpg 1x, 
+                ./image/team-4-mob-2x.jpg 2x"
+                @media="(min-width:480px)"
+                />
+                <img
                 class="img"
-                src="./image/team-4.jpg"
+                src="./image/team-4-mob.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
+              </picture>
+              
               <div class="person">
                 <h3 class="person__title">Михаил Ермаков</h3>
                 <p class="person__text text">UI Designer</p>

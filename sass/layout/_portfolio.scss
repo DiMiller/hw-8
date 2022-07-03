@@ -73,8 +73,8 @@
     border: 1px solid #eeeeee;
   
     transition-property: background-color color box-shadow;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 
    &:hover,
    &:focus {
@@ -118,32 +118,30 @@
   }
   
   .project-wrap{
-  position: relative;
-  overflow: hidden;
-  }
-  
-  .project-wrap__text{
-    position: absolute;
-    transform: translateY(100%);
-    transition: transform 250ms linear;
-    
-  
-    margin: 0;
-    padding: 63px 24px;
-    height: 100%;
-    top: 0%;
-  
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-    background-color: rgba(33, 150, 243, 0.9);
-    .project__item:hover &{
-      transform: translateY(0);
+    position: relative;
+    overflow: hidden;
     }
+ 
+    .project-wrap__text{
+      position: absolute;
+      transform: translateY(100%);
+      transition: transform 250ms linear;
+ 
+      margin: 0;
+      padding: 63px 24px;
+      height: 100%;
+      top: 0%;
+ 
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      color: var(--second-text-color);
+      background-color: rgba(33, 150, 243, 0.9);
+
+      .project__item:hover & {
+        transform: translateY(0);
+      }
+    
   }
 }
-
-  
-  
