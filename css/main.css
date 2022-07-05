@@ -1349,10 +1349,12 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
-.project__item .name-project {
+
+.name-project {
   padding: 20px 24px;
 }
-.project__item .name-project__title {
+
+.name-project__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -1360,7 +1362,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-.project__item .name-project__text {
+
+.name-project__text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -1368,11 +1371,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.project__item .project-wrap {
+
+.project-wrap {
   position: relative;
   overflow: hidden;
 }
-.project__item .project-wrap__text {
+
+.project-wrap__text {
   position: absolute;
   transform: translateY(100%);
   transition: transform 250ms linear;
@@ -1387,6 +1392,6 @@ body {
   color: var(--second-text-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
-.project__item:hover .project__item .project-wrap__text {
+.project__item:hover .project-wrap__text {
   transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */
